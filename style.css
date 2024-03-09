@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -43,7 +43,7 @@ main img {
 
 .item {
   flex: 1;
-  margin: 10px;
+  margin:10px;
 }
 
 .item-double {
@@ -54,17 +54,17 @@ main img {
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 20px 20px;
   text-align: center;
 }
-/*       re          */
+
 .logo {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
 }
 
-header nav ul{
+header nav ul {
   display: flex;
   justify-content: center;
 }
@@ -79,6 +79,7 @@ header nav ul li a {
   padding: 0 20px 0 0;
 }
 
+
 header nav ul li a:hover {
   color: #bdbdbd;
   text-decoration: none;
@@ -86,11 +87,11 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  border: 2px solid #ff385c;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px solid #ff385c;
+  padding: 10px;
 }
 
 form label {
@@ -128,44 +129,51 @@ footer p {
 /* -------  Media Query ------- */
 
 @media all and (min-width: 768px) {
-  header{
+  header {
     background-color: #ff385c;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  header nav{
+
+  header nav {
     padding: 10px;
   }
-  form{
+
+  form {
     flex-direction: row;
   }
-  .group{
+
+  .group {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-flow: nowrap;
+    flex-flow:  nowrap;
     align-items: center;
   }
-  .search-form.item{
-    display: flex;
-    flex: auto;
+
+  .search-form .item {
+    display: flex ;
+    flex:  auto;
     flex-direction: column;
   }
-  .tempA label,
-  .tempA input,
-  .tempA select,
-  .tempA button{
+
+  .item label
+  , .item input 
+  , .item select 
+  , .item button{
     display: flex;
-    width: 100%;
+    width: 100%
   }
+
   .grid-column {
     display: flex;
     flex: 1;
-    flex-direction: column;
+    flex-direction: column; 
     margin: 10px;
   }
-  .grid-row{
+
+  .grid-row {
     display: flex;
     flex: 1;
     flex-direction: row;
